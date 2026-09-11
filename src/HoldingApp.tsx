@@ -17,7 +17,16 @@ function Reveal({ children, className = '', delay = 0 }: { children: React.React
 }
 
 function Brand({ compact = false }: { compact?: boolean }) {
-  return <span className="brand"><span className={`brand-mark ${compact ? 'compact' : ''}`} aria-hidden="true"><svg viewBox="0 0 64 58"><path d="M32 2 17 21h30L32 2Z"/><path d="M14 27 2 47h27V27H14Z"/><path d="M35 27v20h27L50 27H35Z"/></svg></span><span className="brand-copy"><span className="brand-name">AL BAIDA <em>HOLDING</em></span><span className="brand-line">DOHA · QATAR · SINCE 1970</span></span></span>
+  return (
+    <span className="brand">
+      <span className={`brand-mark ${compact ? 'compact' : ''}`} aria-hidden="true">
+        <img
+          src="/images/al-baida-logo-transparent.png"
+          alt="Al Baida Holding"
+        />
+      </span>
+    </span>
+  );
 }
 
 function ScrollManager() {

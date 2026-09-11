@@ -76,13 +76,77 @@ export const partners = ['Telos', 'PILOG', 'TÜV', 'Alghanim', 'Adepts', 'ECG', 
 
 
 export const subsidiaries = [
-  'Al Baida Technical Services', 'Al Baida Agricultural Services', 'Al Mesned International Holding',
-  'Moryat Trading and Contracting', 'Group Real Estate', 'North Enterprises',
-  'Al Baida Saudi Contracting Company', 'Servex Global Logistics', 'Al Aziziya Chemical Factory',
-  'Milestone International – Pune University Qatar', 'APS International', 'Arab Cargo',
-  'Business Link Consulting and Services Co.', 'ARRC Management Consulting and Digital Solutions',
-  'CME Trading and Energy Services', 'Prime Structure Trading QFZ LLC',
-  'Petroleum Doha Trading and Contracting', 'Telos Energy Services',
+  {
+    name: 'Al Baida Technical Services',
+    description: 'A leading provider of integrated technical, facility management, maintenance, manpower, and operational support services for government, industrial, and commercial sectors across Qatar.',
+  },
+  {
+    name: 'Al Baida Agricultural Services',
+    description: 'Specialized in agricultural production, landscaping, irrigation systems, nursery operations, and sustainable green development projects supporting public and private sector initiatives.',
+  },
+  {
+    name: 'Al Mesned International Holding',
+    description: 'A strategic investment and business development company overseeing diversified ventures across industrial, commercial, logistics, and infrastructure sectors.',
+  },
+  {
+    name: 'Moryat Trading and Contracting',
+    description: 'Providing contracting, procurement, project support, and trading services for construction, infrastructure, and industrial projects.',
+  },
+  {
+    name: 'Group Real Estate',
+    description: 'Focused on real estate development, property management, investment opportunities, and strategic asset management across Qatar and the region.',
+  },
+  {
+    name: 'North Enterprises',
+    description: 'Supporting commercial operations through diversified business solutions, procurement services, and strategic project support.',
+  },
+  {
+    name: 'Al Baida Saudi Contracting Company',
+    description: 'Extending Al Baida’s contracting and project management expertise into Saudi Arabia through infrastructure, industrial, and construction services.',
+  },
+  {
+    name: 'Servex Global Logistics',
+    description: 'A regional logistics and freight forwarding company operating across Qatar, Saudi Arabia, the UAE, and Egypt, providing integrated transportation, customs clearance, warehousing, and supply chain solutions.',
+  },
+  {
+    name: 'Al Aziziya Chemical Factory',
+    description: 'Manufacturing and supplying chemical products that support industrial, construction, and operational requirements while maintaining high quality and safety standards.',
+  },
+  {
+    name: 'Milestone International – Pune University Qatar',
+    description: 'Providing internationally recognized educational programs, academic partnerships, and professional development opportunities that support lifelong learning and workforce advancement.',
+  },
+  {
+    name: 'APS International',
+    description: 'Delivering factory management, industrial modernization, smart technology integration, engineering support, and workforce development solutions for industrial clients.',
+  },
+  {
+    name: 'Arab Cargo',
+    description: 'Providing cargo handling, freight forwarding, customs clearance, and transportation solutions for regional and international trade operations.',
+  },
+  {
+    name: 'Business Link Consulting and Services Co.',
+    description: 'Offering business consultancy, operational support, strategic planning, and professional services that help organizations improve efficiency and achieve growth objectives.',
+  },
+  {
+    name: 'ARRC Management Consulting and Digital Solutions',
+    description: 'Specialized in management consulting, digital transformation, organizational development, and technology-driven business solutions.',
+  },
+  {
+    name: 'CME Trading and Energy Services',
+    description: 'Supporting the energy sector through specialized trading, procurement, technical services, and project support solutions.',
+  },
+  {
+    name: 'Prime Structure Trading QFZ LLC',
+    description: 'Providing industrial trading, project materials, procurement solutions, and supply chain support within Qatar Free Zones and regional markets.',
+  },
+  {
+    name: 'Petroleum Doha Trading and Contracting',
+    description: 'Delivering procurement, contracting, and operational support services tailored to the oil, gas, and energy sectors.',
+  },
+  {
+    name: 'Telos Energy Services',
+    description: 'Providing specialized energy solutions, technical consultancy, project support, and operational services for industrial and energy clients.',
 ]
 
 export const affiliates = [

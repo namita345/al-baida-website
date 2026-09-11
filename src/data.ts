@@ -151,11 +151,47 @@ export const subsidiaries = [
 ]
 
 export const affiliates = [
-  'TÜV Rheinland', 'Al Ghanim International Qatar', 'ECG Engineering Consultants Group',
-  'Aspect Trading and Contracting', 'Nüssli Doha', 'Stop Over', 'New Project Kitchen Equipment',
-  'Behind Camera for Artistic Production', 'QAT Consultancy', 'Maxmovion Interior',
+  {
+    name: 'TÜV Rheinland',
+    description: 'Testing, inspection, certification, and technical assurance services supporting quality, safety, and compliance.',
+  },
+  {
+    name: 'Al Ghanim International Qatar',
+    description: 'Contracting and engineering services across infrastructure, industrial, and energy projects throughout the region.',
+  },
+  {
+    name: 'ECG Engineering Consultants Group',
+    description: 'Multidisciplinary engineering consultancy covering planning, design, and project management.',
+  },
+  {
+    name: 'Aspect Trading and Contracting',
+    description: 'Contracting, procurement, and project support services for commercial and industrial developments.',
+  },
+  {
+    name: 'Nüssli Doha',
+    description: 'Event infrastructure, temporary structures, exhibition facilities, and large-scale venue solutions.',
+  },
+  {
+    name: 'Stop Over',
+    description: 'Hospitality, travel support, accommodation management, and operational services for corporate and project needs.',
+  },
+  {
+    name: 'New Project Kitchen Equipment',
+    description: 'Supply, installation, and maintenance of commercial kitchen equipment and food service solutions.',
+  },
+  {
+    name: 'Behind Camera for Artistic Production',
+    description: 'Creative production, media, branding, digital content, and audiovisual services.',
+  },
+  {
+    name: 'QAT Consultancy',
+    description: 'Professional consultancy across business development, project management, operations, and strategic planning.',
+  },
+  {
+    name: 'Maxmovion Interior',
+    description: 'Interior design, fit-out, space planning, and turnkey solutions for commercial and residential projects.',
+  },
 ]
-
 export const strategicPartners = [
   'Avineon', 'Alkhorayef Industries', 'Pilog Group', 'Infra Mappa', 'Fine Work', 'Zoetic Global',
   'Elite Survey LLC', 'Engineering and Environmental Solutions',

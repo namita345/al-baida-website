@@ -118,7 +118,14 @@ function NetworkPage() {
     <h3>{company.name}</h3>
     <p>{company.description}</p>
   </article>
-))}</div></div></section><section className="section dark-section"><div className="shell"><SectionHeading dark eyebrow="Affiliates" text="10 affiliated businesses extending specialist reach and international relationships.">Our <em>affiliates.</em></SectionHeading><div className="entity-grid dark-entity-grid">{affiliates.map((name, i) => <article key={name}><span>{String(i + 1).padStart(2, '0')}</span><Handshake/><h3>{name}</h3></article>)}</div></div></section></>
+))}</div></div></section><section className="section dark-section"><div className="shell"><SectionHeading dark eyebrow="Affiliates" text="10 affiliated businesses extending specialist reach and international relationships.">Our <em>affiliates.</em></SectionHeading><div className="entity-grid dark-entity-grid">{affiliates.map((company, i) => (
+  <article key={company.name}>
+    <span>{String(i + 1).padStart(2, '0')}</span>
+    <Handshake/>
+    <h3>{company.name}</h3>
+    <p>{company.description}</p>
+  </article>
+))}</div></div></section></>
 }
 
 function StrategicPartners() {

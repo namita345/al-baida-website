@@ -111,7 +111,14 @@ function About() {
 }
 
 function NetworkPage() {
-  return <><PageHero eyebrow="Subsidiaries & Affiliated Companies" title="The group network behind integrated delivery." text="A diversified portfolio of companies and affiliations supporting capability, scale, and long-term growth." image="/images/factory.jpg"/><section className="section cream-section"><div className="shell"><SectionHeading eyebrow="Subsidiaries" text="18 entities across technical services, agriculture, logistics, consulting, energy, real estate, and specialist operations.">Our <em>subsidiaries.</em></SectionHeading><div className="entity-grid">{subsidiaries.map((name, i) => <article key={name}><span>{String(i + 1).padStart(2, '0')}</span><Building2/><h3>{name}</h3></article>)}</div></div></section><section className="section dark-section"><div className="shell"><SectionHeading dark eyebrow="Affiliates" text="10 affiliated businesses extending specialist reach and international relationships.">Our <em>affiliates.</em></SectionHeading><div className="entity-grid dark-entity-grid">{affiliates.map((name, i) => <article key={name}><span>{String(i + 1).padStart(2, '0')}</span><Handshake/><h3>{name}</h3></article>)}</div></div></section></>
+  return <><PageHero eyebrow="Subsidiaries & Affiliated Companies" title="The group network behind integrated delivery." text="A diversified portfolio of companies and affiliations supporting capability, scale, and long-term growth." image="/images/factory.jpg"/><section className="section cream-section"><div className="shell"><SectionHeading eyebrow="Subsidiaries" text="18 entities across technical services, agriculture, logistics, consulting, energy, real estate, and specialist operations.">Our <em>subsidiaries.</em></SectionHeading><div className="entity-grid">{subsidiaries.map((company, i) => (
+  <article key={company.name}>
+    <span>{String(i + 1).padStart(2, '0')}</span>
+    <Building2/>
+    <h3>{company.name}</h3>
+    <p>{company.description}</p>
+  </article>
+))}</div></div></section><section className="section dark-section"><div className="shell"><SectionHeading dark eyebrow="Affiliates" text="10 affiliated businesses extending specialist reach and international relationships.">Our <em>affiliates.</em></SectionHeading><div className="entity-grid dark-entity-grid">{affiliates.map((name, i) => <article key={name}><span>{String(i + 1).padStart(2, '0')}</span><Handshake/><h3>{name}</h3></article>)}</div></div></section></>
 }
 
 function StrategicPartners() {

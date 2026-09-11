@@ -147,6 +147,7 @@ export const subsidiaries = [
   {
     name: 'Telos Energy Services',
     description: 'Providing specialized energy solutions, technical consultancy, project support, and operational services for industrial and energy clients.',
+  },
 ]
 
 export const affiliates = [

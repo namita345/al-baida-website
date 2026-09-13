@@ -129,7 +129,7 @@ function NetworkPage() {
 }
 
 function StrategicPartners() {
-  return <><PageHero eyebrow="Strategic Partners" title="Partners that extend what we can deliver." text="Eight strategic relationships supporting technology, engineering, industrial capability, mapping, environmental solutions, and specialist expertise." image="/images/engineering.jpg"/><section className="section cream-section"><div className="shell"><SectionHeading center eyebrow="Strategic Partners" text="A focused network of specialist partners aligned around capability and results.">Global expertise.<br/><em>Local execution.</em></SectionHeading><div className="strategic-grid">{strategicPartners.map((name, i) => <Reveal key={name} delay={(i % 4) * .05}><article><span>{String(i + 1).padStart(2, '0')}</span><Handshake/><h3>{name}</h3><p>Strategic partner</p></article></Reveal>)}</div></div></section></>
+  return <><PageHero eyebrow="Strategic Partners" title="Partners that extend what we can deliver." text="Eight strategic relationships supporting technology, engineering, industrial capability, mapping, environmental solutions, and specialist expertise." image="/images/engineering.jpg"/><section className="section cream-section"><div className="shell"><SectionHeading center eyebrow="Strategic Partners" text="A focused network of specialist partners aligned around capability and results.">Global expertise.<br/><em>Local execution.</em></SectionHeading><div className="strategic-grid">{strategicPartners.map((company, i) => <Reveal key={company.name} delay={(i % 4) * .05}><article><span>{String(i + 1).padStart(2, '0')}</span><Handshake/><h3>{company.name}</h3><p>{company.description}</p></article></Reveal>)}</div></div></section></>
 }
 
 function Divisions() {

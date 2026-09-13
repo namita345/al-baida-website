@@ -193,8 +193,38 @@ export const affiliates = [
   },
 ]
 export const strategicPartners = [
-  'Avineon', 'Alkhorayef Industries', 'Pilog Group', 'Infra Mappa', 'Fine Work', 'Zoetic Global',
-  'Elite Survey LLC', 'Engineering and Environmental Solutions',
+  {
+    name: 'Avineon',
+    description: 'A global technology and geospatial solutions provider specializing in digital transformation, enterprise systems, GIS, engineering services, and smart infrastructure solutions.',
+  },
+  {
+    name: 'Alkhorayef Industries',
+    description: 'A leading industrial group delivering innovative solutions in water systems, agriculture, machinery, manufacturing, and infrastructure development across regional markets.',
+  },
+  {
+    name: 'Pilog Group',
+    description: 'A globally recognized leader in Master Data Management (MDM), asset information management, procurement optimization, and digital supply chain solutions.',
+  },
+  {
+    name: 'Infra Mappa',
+    description: 'Specialized in geospatial intelligence, mapping technologies, infrastructure data management, and digital asset solutions supporting smart development initiatives.',
+  },
+  {
+    name: 'Fine Work',
+    description: 'Providing specialized technical, engineering, and project support services with a focus on operational excellence and quality-driven execution.',
+  },
+  {
+    name: 'Zoetic Global',
+    description: 'An international consultancy and business solutions provider supporting organizational growth, strategic development, innovation, and operational transformation.',
+  },
+  {
+    name: 'Elite Survey LLC',
+    description: 'A professional surveying and geomatics company delivering land surveying, engineering surveys, mapping, and spatial data solutions for major infrastructure and construction projects.',
+  },
+  {
+    name: 'Engineering and Environmental Solutions',
+    description: 'A multidisciplinary consultancy providing engineering, environmental, sustainability, compliance, and technical advisory services for public and private sector clients.',
+  },
 ]
 
 export const coreDivisions = [

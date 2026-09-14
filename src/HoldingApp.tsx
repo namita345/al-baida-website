@@ -170,7 +170,21 @@ function Contact() {
   const [sent, setSent] = useState(false)
   const location = useLocation()
   const defaultSubject = new URLSearchParams(location.search).get('subject') || 'General enquiry'
-  const submit = (event: FormEvent<HTMLFormElement>) => { event.preventDefault(); setSent(true) }
+  const submit = async (event: FormEvent<HTMLFormElement>) => {
+  event.preventDefault()
+  const form = event.currentTarget
+  const response = await fetch('https://formspree.io/f/xoeqobdr', {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { Accept: 'application/json' },
+  })
+  if (response.ok) {
+    setSent(true)
+    form.reset()
+  } else {
+    alert('Something went wrong. Please try again.')
+  }
+}
   return <><PageHero eyebrow="Contact Us" title="Let’s talk about what comes next." text="Whether you have a project, partnership, career, or consulting enquiry, the right team is ready to help." image="/images/hero-doha.jpg"/><section className="section cream-section"><div className="shell contact-layout"><div><SectionHeading eyebrow="Get in Touch" text="Trusted since 1970, we power progress across Qatar’s vital industries.">We’d love to<br/><em>hear from you.</em></SectionHeading><div className="contact-cards"><a href="tel:+97444128899"><span><Phone/></span><div><small>CALL US</small><b>+974 4412 8899</b></div></a><a href="mailto:info@albaidagroup.com"><span><Mail/></span><div><small>EMAIL US</small><b>Info@albaidaholding.com</b></div></a><div><span><MapPin/></span><div><small>VISIT US</small><b>P.O. Box 37772, Doha, Qatar</b></div></div></div><div className="map-card"><div className="pattern-dots"/><MapPin/><span>DOHA · QATAR</span><small>25.2854° N · 51.5310° E</small></div></div><Reveal className="contact-form-card" delay={.08}>{sent ? <Success onReset={() => setSent(false)} title="Message sent." text="Thank you. Our team will route your enquiry to the right division."/> : <form onSubmit={submit}><span className="form-kicker">SEND A MESSAGE</span><h2>How can we help?</h2><div className="field-grid"><label>Full name<input required placeholder="Your name"/></label><label>Work email<input required type="email" placeholder="you@company.com"/></label></div><div className="field-grid"><label>Phone number<input type="tel" placeholder="+974"/></label><label>Subject<select defaultValue={defaultSubject}><option>General enquiry</option><option>Project enquiry</option><option>SIMOP consultation</option><option>Consulting enquiry</option><option>Division enquiry</option><option>Media enquiry</option><option>Partnership enquiry</option></select></label></div><label>Interested service<select defaultValue=""><option value="">Choose from list</option>{divisions.map(item => <option key={item.title}>{item.title}</option>)}<option>Consulting Services</option><option>SIMOP / SIMOPS Services</option></select></label><label>Your message<textarea required rows={6} placeholder="Tell us about your requirement"/></label><button className="gold-button" type="submit">Send message <Send size={16}/></button></form>}</Reveal></div></section></>
 }
 

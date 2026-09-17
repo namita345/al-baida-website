@@ -185,7 +185,18 @@ function Contact() {
     alert('Something went wrong. Please try again.')
   }
 }
-  return <><PageHero eyebrow="Contact Us" title="Let’s talk about what comes next." text="Whether you have a project, partnership, career, or consulting enquiry, the right team is ready to help." image="/images/hero-doha.jpg"/><section className="section cream-section"><div className="shell contact-layout"><div><SectionHeading eyebrow="Get in Touch" text="Trusted since 1970, we power progress across Qatar’s vital industries.">We’d love to<br/><em>hear from you.</em></SectionHeading><div className="contact-cards"><a href="tel:+97444128899"><span><Phone/></span><div><small>CALL US</small><b>+974 4412 8899</b></div></a><a href="mailto:info@albaidagroup.com"><span><Mail/></span><div><small>EMAIL US</small><b>Info@albaidaholding.com</b></div></a><div><span><MapPin/></span><div><small>VISIT US</small><b>P.O. Box 37772, Doha, Qatar</b></div></div></div><div className="map-card"><div className="pattern-dots"/><MapPin/><span>DOHA · QATAR</span><small>25.2854° N · 51.5310° E</small></div></div><Reveal className="contact-form-card" delay={.08}>{sent ? <Success onReset={() => setSent(false)} title="Message sent." text="Thank you. Our team will route your enquiry to the right division."/> : <form onSubmit={submit}><span className="form-kicker">SEND A MESSAGE</span><h2>How can we help?</h2><div className="field-grid"><label>Full name<input name="name" required placeholder="Your name"/></label><label>Work email<input name="email" required type="email" placeholder="you@company.com"/></label></div><div className="field-grid"><label>Phone number<input name="phone" type="tel" placeholder="+974"/></label><label>Subject<select name="subject" defaultValue={defaultSubject}><option>General enquiry</option><option>Project enquiry</option><option>SIMOP consultation</option><option>Consulting enquiry</option><option>Division enquiry</option><option>Media enquiry</option><option>Partnership enquiry</option></select></label></div><label>Interested service<select name="service" defaultValue=""><option value="">Choose from list</option>{divisions.map(item => <option key={item.title}>{item.title}</option>)}<option>Consulting Services</option><option>SIMOP / SIMOPS Services</option></select></label><label>Your message<textarea name="message" required rows={6} placeholder="Tell us about your requirement"/></label><button className="gold-button" type="submit">Send message <Send size={16}/></button></form>}</Reveal></div></section></>
+  return <><PageHero eyebrow="Contact Us" title="Let’s talk about what comes next." text="Whether you have a project, partnership, career, or consulting enquiry, the right team is ready to help." image="/images/hero-doha.jpg"/><section className="section cream-section"><div className="shell contact-layout"><div><SectionHeading eyebrow="Get in Touch" text="Trusted since 1970, we power progress across Qatar’s vital industries.">We’d love to<br/><em>hear from you.</em></SectionHeading><div className="contact-cards"><a href="tel:+97444128899"><span><Phone/></span><div><small>CALL US</small><b>+974 4412 8899</b></div></a><a href="mailto:info@albaidagroup.com"><span><Mail/></span><div><small>EMAIL US</small><b>Info@albaidaholding.com</b></div></a><div><span><MapPin/></span><div><small>VISIT US</small><b>P.O. Box 37772, Doha, Qatar</b></div></div></div><div className="map-card"><div className="pattern-dots"/><MapPin/><span>DOHA · QATAR</span><small>25.2854° N · 51.5310° E</small></div></div><div className="contact-map-large">
+  <iframe
+    src="https://www.google.com/maps?q=Al%20Baida%20Holding%2C%20Doha%2C%20Qatar&output=embed"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Al Baida Holding Location"
+  />
+</div></div></section></>
 }
 
 function Footer() {

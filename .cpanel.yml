@@ -2,6 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home1/qrnadrmy/public_html/albaidaholding.com/
-    - /bin/npm install
-    - /bin/npm run build
     - /bin/cp -R dist/* $DEPLOYPATH

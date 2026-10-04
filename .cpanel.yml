@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home1/qrnadrmy/public_html/albaidaholding.com/
+    - export DEPLOYPATH=/home1/qrnadrmy/public_html/albaidaholding/
     - /bin/cp -R dist/. $DEPLOYPATH

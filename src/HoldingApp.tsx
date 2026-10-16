@@ -117,67 +117,89 @@ function About() {
         >
           Board of Directors & <em>Executive Management.</em>
         </SectionHeading>
-        <div className="governance-charts">
-  <div className="governance-chart">
-    <h3>Board of Directors</h3>
-    <div className="governance-members">
-      <div className="governance-member">
+    
+<div className="governance-charts org-chart-layout">
+  {/* Board of Directors */}
+  <div className="org-panel board-panel">
+    <h3 className="org-panel-title">Board of Directors</h3>
+
+    <div className="org-tree board-tree">
+      <div className="org-node org-node-primary">
         <strong>Eng. Ali Almesned</strong>
         <span>Chairman</span>
       </div>
-      <div className="governance-member">
+
+      <div className="org-connector org-vertical"></div>
+
+      <div className="org-node">
         <strong>Abdulatif Ali Almesned</strong>
         <span>Vice Chairman</span>
       </div>
-      <div className="governance-member">
-        <strong>Eng. Mohamed Elwan</strong>
-        <span>Board Member</span>
+
+      <div className="org-connector org-vertical"></div>
+
+      <div className="org-branch board-branch">
+        <div className="org-node">
+          <strong>Eng. Mohamed Elwan</strong>
+          <span>Board Member</span>
+        </div>
+        <div className="org-node">
+          <strong>Eng. Samir El-Attawi</strong>
+          <span>Board Member</span>
+        </div>
       </div>
-      <div className="governance-member">
-        <strong>Eng. Samir El-Attawi</strong>
-        <span>Board Member</span>
-      </div>
-      <div className="governance-member">
+
+      <div className="org-connector org-vertical"></div>
+
+      <div className="org-node board-secretary">
         <strong>Ahmed Naeem</strong>
         <span>Board Secretary</span>
       </div>
     </div>
   </div>
 
-  <div className="governance-chart">
-    <h3>Executive Management</h3>
-    <div className="governance-members">
-      <div className="governance-member">
+  {/* Executive Management */}
+  <div className="org-panel executive-panel">
+    <h3 className="org-panel-title">Executive Management</h3>
+
+    <div className="org-tree executive-tree">
+      <div className="org-node org-node-primary executive-ceo">
         <strong>Eng. Mohamed Elwan</strong>
         <span>Group CEO</span>
       </div>
-      <div className="governance-member">
-        <strong>Sameer El-Attawi</strong>
-        <span>Head of Venture</span>
-      </div>
-      <div className="governance-member">
-        <strong>Khazaan Haider</strong>
-        <span>Group Finance Manager</span>
-      </div>
-      <div className="governance-member">
-        <strong>Ahmed Naeem</strong>
-        <span>Group Head of Audit</span>
-      </div>
-      <div className="governance-member">
-        <strong>Mohammad Ibrahim</strong>
-        <span>General Manager</span>
-      </div>
-      <div className="governance-member">
-        <strong>Waleed Abdelqader</strong>
-        <span>General Manager</span>
-      </div>
-      <div className="governance-member">
-        <strong>Faiyar Ahmad</strong>
-        <span>Group IT Manager</span>
+
+      <div className="org-connector org-vertical"></div>
+
+      <div className="org-branch executive-branch">
+        <div className="org-node">
+          <strong>Sameer El-Attawi</strong>
+          <span>Head of Venture</span>
+        </div>
+        <div className="org-node">
+          <strong>Khazaan Haider</strong>
+          <span>Group Finance Manager</span>
+        </div>
+        <div className="org-node">
+          <strong>Ahmed Naeem</strong>
+          <span>Group Head of Audit</span>
+        </div>
+        <div className="org-node">
+          <strong>Mohammad Ibrahim</strong>
+          <span>General Manager</span>
+        </div>
+        <div className="org-node">
+          <strong>Waleed Abdelqader</strong>
+          <span>General Manager</span>
+        </div>
+        <div className="org-node">
+          <strong>Faiyar Ahmad</strong>
+          <span>Group IT Manager</span>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
       </div>
     </section>
   </>

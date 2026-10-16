@@ -205,3 +205,80 @@ html{scroll-behavior:smooth}body{min-width:320px;margin:0;overflow-x:hidden;back
     min-height: 105px;
   }
 }
+
+/* Governance section */
+.governance-section {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.governance-charts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 55px;
+  align-items: start;
+}
+
+.governance-chart {
+  background: #ffffff;
+  border: 1px solid #e8dfce;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 28px rgba(12, 24, 43, 0.05);
+}
+
+.governance-chart h3 {
+  margin: 0 0 22px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e8dfce;
+  color: #0b1729;
+  font-size: 22px;
+  line-height: 1.3;
+}
+
+.governance-members {
+  display: grid;
+  gap: 0;
+}
+
+.governance-member {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee9df;
+}
+
+.governance-member:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.governance-member strong {
+  color: #0b1729;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.governance-member span {
+  color: #657080;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .governance-charts {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 35px;
+  }
+
+  .governance-chart {
+    padding: 22px;
+  }
+
+  .governance-chart h3 {
+    font-size: 20px;
+  }
+}

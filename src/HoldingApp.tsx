@@ -118,8 +118,66 @@ function About() {
           Board of Directors & <em>Executive Management.</em>
         </SectionHeading>
         <div className="governance-charts">
-          {/* Governance charts will be added later */}
-        </div>
+  <div className="governance-chart">
+    <h3>Board of Directors</h3>
+    <div className="governance-members">
+      <div className="governance-member">
+        <strong>Eng. Ali Almesned</strong>
+        <span>Chairman</span>
+      </div>
+      <div className="governance-member">
+        <strong>Abdulatif Ali Almesned</strong>
+        <span>Vice Chairman</span>
+      </div>
+      <div className="governance-member">
+        <strong>Eng. Mohamed Elwan</strong>
+        <span>Board Member</span>
+      </div>
+      <div className="governance-member">
+        <strong>Eng. Samir El-Attawi</strong>
+        <span>Board Member</span>
+      </div>
+      <div className="governance-member">
+        <strong>Ahmed Naeem</strong>
+        <span>Board Secretary</span>
+      </div>
+    </div>
+  </div>
+
+  <div className="governance-chart">
+    <h3>Executive Management</h3>
+    <div className="governance-members">
+      <div className="governance-member">
+        <strong>Eng. Mohamed Elwan</strong>
+        <span>Group CEO</span>
+      </div>
+      <div className="governance-member">
+        <strong>Sameer El-Attawi</strong>
+        <span>Head of Venture</span>
+      </div>
+      <div className="governance-member">
+        <strong>Khazaan Haider</strong>
+        <span>Group Finance Manager</span>
+      </div>
+      <div className="governance-member">
+        <strong>Ahmed Naeem</strong>
+        <span>Group Head of Audit</span>
+      </div>
+      <div className="governance-member">
+        <strong>Mohammad Ibrahim</strong>
+        <span>General Manager</span>
+      </div>
+      <div className="governance-member">
+        <strong>Waleed Abdelqader</strong>
+        <span>General Manager</span>
+      </div>
+      <div className="governance-member">
+        <strong>Faiyar Ahmad</strong>
+        <span>Group IT Manager</span>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
     </section>
   </>

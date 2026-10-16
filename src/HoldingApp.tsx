@@ -125,8 +125,6 @@ function About() {
   </>
 }
 
-  </>
-}
 
 function NetworkPage() {
   return <><PageHero eyebrow="Subsidiaries & Affiliated Companies" title="The group network behind integrated delivery." text="A diversified portfolio of companies and affiliations supporting capability, scale, and long-term growth." image="/images/factory.jpg"/><section className="section cream-section"><div className="shell"><SectionHeading eyebrow="Subsidiaries" text="18 entities across technical services, agriculture, logistics, consulting, energy, real estate, and specialist operations.">Our <em>subsidiaries.</em></SectionHeading><div className="entity-grid">{subsidiaries.map((company, i) => (

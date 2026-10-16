@@ -282,3 +282,205 @@ html{scroll-behavior:smooth}body{min-width:320px;margin:0;overflow-x:hidden;back
     font-size: 20px;
   }
 }
+
+/* Governance organizational charts */
+.governance-section {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.org-chart-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+  margin-top: 48px;
+}
+
+.org-panel {
+  min-width: 0;
+  padding: 28px 22px;
+  background: #fffdf8;
+  border: 1px solid #e4d3ad;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(12, 24, 43, 0.06);
+}
+
+.org-panel-title {
+  margin: 0 0 28px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #e8dfce;
+  color: #10233f;
+  text-align: center;
+  font-size: 21px;
+}
+
+.org-tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.org-node {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+  max-width: 260px;
+  min-height: 78px;
+  padding: 14px 12px;
+  text-align: center;
+  background: #fffaf0;
+  border: 1px solid #c9a65c;
+  border-radius: 9px;
+}
+
+.org-node strong {
+  color: #17263b;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.org-node span {
+  color: #756443;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.org-node-primary {
+  color: #fff;
+  background: #10233f;
+  border: 1px solid #c9a65c;
+  box-shadow: 0 5px 14px rgba(16, 35, 63, 0.12);
+}
+
+.org-node-primary strong,
+.org-node-primary span {
+  color: #fff;
+}
+
+.org-connector {
+  position: relative;
+  flex: 0 0 auto;
+  width: 1px;
+  height: 25px;
+  background: #b79a60;
+}
+
+.org-branch {
+  position: relative;
+  display: grid;
+  width: 100%;
+  gap: 12px;
+  align-items: start;
+}
+
+.board-branch {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.board-branch::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 25%;
+  right: 25%;
+  height: 1px;
+  background: #b79a60;
+}
+
+.board-branch .org-node {
+  min-height: 88px;
+}
+
+.board-secretary {
+  margin-top: 25px;
+}
+
+.executive-ceo {
+  margin-bottom: 0;
+}
+
+.executive-branch {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px 10px;
+}
+
+.executive-branch::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 16.66%;
+  right: 16.66%;
+  height: 1px;
+  background: #b79a60;
+}
+
+.executive-branch .org-node {
+  min-height: 108px;
+  padding: 12px 8px;
+}
+
+.executive-branch .org-node strong {
+  font-size: 12px;
+}
+
+.executive-branch .org-node span {
+  font-size: 11px;
+}
+
+/* Mobile layout */
+@media (max-width: 900px) {
+  .org-chart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .org-panel {
+    padding: 24px 16px;
+  }
+
+  .executive-branch {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .executive-branch::before {
+    left: 25%;
+    right: 25%;
+  }
+}
+
+@media (max-width: 480px) {
+  .governance-section {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+
+  .org-panel-title {
+    font-size: 19px;
+  }
+
+  .board-branch {
+    gap: 8px;
+  }
+
+  .board-branch .org-node {
+    padding: 12px 6px;
+  }
+
+  .board-branch .org-node strong {
+    font-size: 12px;
+  }
+
+  .executive-branch {
+    gap: 16px 8px;
+  }
+
+  .executive-branch .org-node {
+    padding: 10px 5px;
+  }
+}

@@ -107,31 +107,24 @@ function About() {
     <section className="section cream-section"><div className="shell"><SectionHeading eyebrow="Who We Are & What We Do" text="A connected group of companies delivering integrated service capability. Why we work as one. We combine specialist businesses under a shared commitment to quality, reliability, and responsible growth.">One group.<br/><em>Integrated capability.</em></SectionHeading><div className="about-cards"><article><Building2/><h3>Who We Are</h3><p>A Qatari holding group with diversified businesses, strategic affiliations, and regional relationships.</p></article><article><Network/><h3>What We Do</h3><p>We connect contracting, engineering, facilities, logistics, technology, agriculture, education, workforce, and project capability.</p></article><article><Handshake/><h3>How We Partner</h3><p>We build dependable relationships with clients, affiliates, and strategic partners to deliver shared value.</p></article></div></div></section>
     <section className="section sand-section"><div className="shell"><div className="vision-mission-grid"><div><Eyebrow>Our Vision</Eyebrow><h2>Leading regional growth through <em>capability and trust.</em></h2></div><div><Eyebrow>Our Mission</Eyebrow><p>To deliver high-value services across core sectors, empower national and regional development, and build lasting value through people, partnerships, and progress.</p></div></div></div></section>
     
-<section className="section cream-section governance-section">
-  <div className="shell">
-    <SectionHeading
-      center
-      eyebrow="Governance"
-      text="A strong governance structure supports accountable decision-making and sustainable growth."
-    >
-      Board of Directors & <em>Executive Management.</em>
-    </SectionHeading>
 
-    <div className="governance-charts">
-      {/* Board of Directors and Executive Management charts go here */}
-    </div>
-  </div>
-</section>
-<div className="shell"><SectionHeading center eyebrow="Governance" text="A strong governance structure supports accountable decision-making and sustainable growth.">Board of Directors & <em>Executive Management.</em></SectionHeading><section className="section cream-section governance-section">
-  <div className="shell">
-    <SectionHeading center eyebrow="Governance" text="A strong governance structure supports accountable decision-making and sustainable growth.">
-      Board of Directors & <em>Executive Management.</em>
-    </SectionHeading>
+    <section className="section cream-section governance-section">
+      <div className="shell">
+        <SectionHeading
+          center
+          eyebrow="Governance"
+          text="A strong governance structure supports accountable decision-making and sustainable growth."
+        >
+          Board of Directors & <em>Executive Management.</em>
+        </SectionHeading>
+        <div className="governance-charts">
+          {/* Governance charts will be added later */}
+        </div>
+      </div>
+    </section>
+  </>
+}
 
-    {/* PASTE THE NEW governance-charts CODE HERE */}
-
-  </div>
-</section></div></section>
   </>
 }
 

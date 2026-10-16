@@ -192,7 +192,7 @@ function About() {
           <span>General Manager</span>
         </div>
         <div className="org-node">
-          <strong>Faiyar Ahmad</strong>
+          <strong>Fayyaz Ahmad</strong>
           <span>Group IT Manager</span>
         </div>
       </div>
